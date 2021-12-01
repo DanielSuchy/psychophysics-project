@@ -1,0 +1,118 @@
+1.4076 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+6.2572 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+8.9025 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002489F86CBA8>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002489F8C1048>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.9030 	EXP 	window1: mouseVisible = True
+8.9031 	EXP 	window1: recordFrameIntervals = False
+9.0683 	EXP 	window1: recordFrameIntervals = True
+9.2522 	EXP 	window1: recordFrameIntervals = False
+9.8600 	EXP 	Created instr = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='instuctions.png', interpolate=True, mask=None, maskParams=None, name='instr', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+10.0157 	EXP 	Created isNative = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isNative', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.0294 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.0313 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.0377 	EXP 	Created practice1Cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='practice1Cross', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+10.0472 	EXP 	Created practice1Text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='practice1Text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='The driver crashed the car.', units='height', win=Window(...), wrapWidth=1)
+10.0488 	EXP 	Created feedback1Text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='feedback1Text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.0509 	EXP 	Created feedback1Blank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='feedback1Blank', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.0544 	EXP 	Created practice2Cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='practice2Cross', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+10.0623 	EXP 	Created practice2Text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='practice2Text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='The car drives the airplane.', units='height', win=Window(...), wrapWidth=1)
+10.0641 	EXP 	Created feedback2Text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='feedback2Text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.0661 	EXP 	Created feedback2Blank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='feedback2Blank', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.0683 	EXP 	Created sentence = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='sentence', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.0714 	EXP 	Created fixationCross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fixationCross', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+10.0936 	EXP 	Created debriefText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='debriefText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.1533 	EXP 	instr: autoDraw = True
+11.6334 	DATA 	Keypress: y
+11.6445 	EXP 	instr: autoDraw = False
+11.6445 	EXP 	isNative: autoDraw = True
+13.6476 	DATA 	Keypress: y
+13.6732 	EXP 	isNative: autoDraw = False
+13.6732 	EXP 	text: autoDraw = True
+18.6616 	EXP 	text_2: autoDraw = True
+18.6778 	EXP 	text: autoDraw = False
+21.6641 	EXP 	text_2: autoDraw = False
+21.6641 	EXP 	text: autoDraw = False
+21.6641 	EXP 	text_2: autoDraw = False
+21.6641 	EXP 	practice1Cross: autoDraw = True
+22.6489 	EXP 	practice1Text: autoDraw = True
+22.6653 	EXP 	practice1Cross: autoDraw = False
+27.6534 	EXP 	practice1Text: autoDraw = False
+32.6745 	EXP 	practice1Cross: autoDraw = False
+32.6745 	EXP 	practice1Text: autoDraw = False
+32.6745 	EXP 	feedback1Text: text = 'Your answer was incorrect. Please talk to Dan about the instructions.'
+32.6745 	EXP 	feedback1Text: autoDraw = True
+37.6639 	EXP 	feedback1Blank: autoDraw = True
+37.6800 	EXP 	feedback1Text: autoDraw = False
+40.6664 	EXP 	feedback1Blank: autoDraw = False
+40.6664 	EXP 	feedback1Text: autoDraw = False
+40.6664 	EXP 	feedback1Blank: autoDraw = False
+40.6664 	EXP 	practice2Cross: autoDraw = True
+41.6509 	EXP 	practice2Text: autoDraw = True
+41.6676 	EXP 	practice2Cross: autoDraw = False
+43.9637 	DATA 	Keypress: n
+43.9670 	EXP 	practice2Cross: autoDraw = False
+43.9670 	EXP 	practice2Text: autoDraw = False
+43.9670 	EXP 	feedback2Text: text = "Your response was: 'no', which is correct. The experiment will begin now."
+43.9670 	EXP 	feedback2Text: autoDraw = True
+48.9586 	EXP 	feedback2Blank: autoDraw = True
+48.9746 	EXP 	feedback2Text: autoDraw = False
+51.9784 	EXP 	Imported stimuliFiltered.xlsx as conditions, 64 conditions, 5 params
+51.9793 	EXP 	Created sequence: random, trialTypes=64, nReps=1, seed=None
+51.9796 	EXP 	New trial (rep=0, index=0): {'sentenceID': 15, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The girl tore her sweater.'}
+51.9918 	EXP 	feedback2Blank: autoDraw = False
+51.9918 	EXP 	feedback2Text: autoDraw = False
+51.9918 	EXP 	feedback2Blank: autoDraw = False
+51.9918 	EXP 	sentence: text = 'The girl tore her sweater.'
+51.9918 	EXP 	fixationCross: autoDraw = True
+52.9789 	EXP 	sentence: autoDraw = True
+52.9956 	EXP 	fixationCross: autoDraw = False
+55.4811 	EXP 	sentence: autoDraw = False
+57.4717 	EXP 	New trial (rep=0, index=1): {'sentenceID': 56, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The baker dissolved in the milk.'}
+57.4926 	EXP 	sentence: autoDraw = False
+57.4926 	EXP 	fixationCross: autoDraw = False
+57.4926 	EXP 	sentence: text = 'The baker dissolved in the milk.'
+57.4926 	EXP 	fixationCross: autoDraw = True
+58.4845 	EXP 	sentence: autoDraw = True
+58.5011 	EXP 	fixationCross: autoDraw = False
+60.9865 	EXP 	sentence: autoDraw = False
+62.9750 	EXP 	New trial (rep=0, index=2): {'sentenceID': 26, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The wash shrank in the shirt.'}
+62.9885 	EXP 	sentence: autoDraw = False
+62.9885 	EXP 	fixationCross: autoDraw = False
+62.9885 	EXP 	sentence: text = 'The wash shrank in the shirt.'
+62.9885 	EXP 	fixationCross: autoDraw = True
+63.9899 	EXP 	sentence: autoDraw = True
+63.9899 	EXP 	fixationCross: autoDraw = False
+66.4924 	EXP 	sentence: autoDraw = False
+68.4816 	EXP 	New trial (rep=0, index=3): {'sentenceID': 60, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The cook heated in the soup.'}
+68.5022 	EXP 	sentence: autoDraw = False
+68.5022 	EXP 	fixationCross: autoDraw = False
+68.5022 	EXP 	sentence: text = 'The cook heated in the soup.'
+68.5022 	EXP 	fixationCross: autoDraw = True
+69.4788 	EXP 	sentence: autoDraw = True
+69.5121 	EXP 	fixationCross: autoDraw = False
+71.9810 	EXP 	sentence: autoDraw = False
+73.9705 	EXP 	New trial (rep=0, index=4): {'sentenceID': 19, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The boat sank in the storm.'}
+73.9939 	EXP 	sentence: autoDraw = False
+73.9939 	EXP 	fixationCross: autoDraw = False
+73.9939 	EXP 	sentence: text = 'The boat sank in the storm.'
+73.9939 	EXP 	fixationCross: autoDraw = True
+74.9843 	EXP 	sentence: autoDraw = True
+75.0009 	EXP 	fixationCross: autoDraw = False
+77.4865 	EXP 	sentence: autoDraw = False
+79.4753 	EXP 	New trial (rep=0, index=5): {'sentenceID': 30, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The boy burst behind the balloon.'}
+79.4924 	EXP 	sentence: autoDraw = False
+79.4924 	EXP 	fixationCross: autoDraw = False
+79.4924 	EXP 	sentence: text = 'The boy burst behind the balloon.'
+79.4924 	EXP 	fixationCross: autoDraw = True
+80.4898 	EXP 	sentence: autoDraw = True
+80.5065 	EXP 	fixationCross: autoDraw = False
+82.9919 	EXP 	sentence: autoDraw = False
+84.9815 	EXP 	New trial (rep=0, index=6): {'sentenceID': 8, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The sugar dissolved the baker.'}
+85.0009 	EXP 	sentence: autoDraw = False
+85.0009 	EXP 	fixationCross: autoDraw = False
+85.0009 	EXP 	sentence: text = 'The sugar dissolved the baker.'
+85.0009 	EXP 	fixationCross: autoDraw = True
+85.9785 	EXP 	sentence: autoDraw = True
+86.0118 	EXP 	fixationCross: autoDraw = False
+88.4808 	EXP 	sentence: autoDraw = False
+89.4038 	DATA 	Keypress: escape
+89.6711 	EXP 	window1: mouseVisible = True
