@@ -1,0 +1,593 @@
+2.4018 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+14.1645 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+16.9319 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001C3801FABE0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001C380261080>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+16.9324 	EXP 	window1: mouseVisible = True
+16.9325 	EXP 	window1: recordFrameIntervals = False
+17.0974 	EXP 	window1: recordFrameIntervals = True
+17.2809 	EXP 	window1: recordFrameIntervals = False
+18.2292 	EXP 	Created instr = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='instuctions.png', interpolate=True, mask=None, maskParams=None, name='instr', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+18.4647 	EXP 	Created isNative = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='isNative', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+18.4843 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+18.4876 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+18.4962 	EXP 	Created practice1Cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='practice1Cross', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+18.5112 	EXP 	Created practice1Text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='practice1Text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='The driver crashed the car.', units='height', win=Window(...), wrapWidth=1)
+18.5158 	EXP 	Created feedback1Text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='feedback1Text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+18.5206 	EXP 	Created feedback1Blank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='feedback1Blank', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+18.5283 	EXP 	Created practice2Cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='practice2Cross', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+18.5400 	EXP 	Created practice2Text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='practice2Text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='The car drives the airplane.', units='height', win=Window(...), wrapWidth=1)
+18.5426 	EXP 	Created feedback2Text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='feedback2Text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+18.5465 	EXP 	Created feedback2Blank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='feedback2Blank', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+18.5502 	EXP 	Created sentence = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='sentence', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+18.5558 	EXP 	Created fixationCross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fixationCross', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+18.5889 	EXP 	Created debriefText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='debriefText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+18.6946 	EXP 	instr: autoDraw = True
+120.9523 	DATA 	Keypress: y
+120.9876 	EXP 	instr: autoDraw = False
+120.9876 	EXP 	isNative: autoDraw = True
+129.6669 	DATA 	Keypress: n
+129.6719 	EXP 	isNative: autoDraw = False
+129.6719 	EXP 	text: autoDraw = True
+134.6512 	EXP 	text_2: autoDraw = True
+134.6839 	EXP 	text: autoDraw = False
+137.6649 	EXP 	text_2: autoDraw = False
+137.6649 	EXP 	text: autoDraw = False
+137.6649 	EXP 	text_2: autoDraw = False
+137.6649 	EXP 	practice1Cross: autoDraw = True
+138.6478 	EXP 	practice1Text: autoDraw = True
+138.6644 	EXP 	practice1Cross: autoDraw = False
+142.3703 	DATA 	Keypress: y
+142.4249 	EXP 	practice1Cross: autoDraw = False
+142.4249 	EXP 	practice1Text: autoDraw = False
+142.4249 	EXP 	feedback1Text: text = "Your response was: 'yes'. Now let's try one more round."
+142.4249 	EXP 	feedback1Text: autoDraw = True
+147.4075 	EXP 	feedback1Blank: autoDraw = True
+147.4234 	EXP 	feedback1Text: autoDraw = False
+150.4211 	EXP 	feedback1Blank: autoDraw = False
+150.4211 	EXP 	feedback1Text: autoDraw = False
+150.4211 	EXP 	feedback1Blank: autoDraw = False
+150.4211 	EXP 	practice2Cross: autoDraw = True
+151.4037 	EXP 	practice2Text: autoDraw = True
+151.4205 	EXP 	practice2Cross: autoDraw = False
+154.4855 	DATA 	Keypress: n
+154.4890 	EXP 	practice2Cross: autoDraw = False
+154.4890 	EXP 	practice2Text: autoDraw = False
+154.4890 	EXP 	feedback2Text: text = "Your response was: 'no', which is correct. The experiment will begin now."
+154.4890 	EXP 	feedback2Text: autoDraw = True
+159.4643 	EXP 	feedback2Blank: autoDraw = True
+159.4968 	EXP 	feedback2Text: autoDraw = False
+162.5215 	EXP 	Imported stimuliFiltered.xlsx as conditions, 64 conditions, 5 params
+162.5235 	EXP 	Created sequence: random, trialTypes=64, nReps=1, seed=None
+162.5244 	EXP 	New trial (rep=0, index=0): {'sentenceID': 12, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The soup heated the cook.'}
+162.5465 	EXP 	feedback2Blank: autoDraw = False
+162.5465 	EXP 	feedback2Text: autoDraw = False
+162.5465 	EXP 	feedback2Blank: autoDraw = False
+162.5465 	EXP 	sentence: text = 'The soup heated the cook.'
+162.5465 	EXP 	fixationCross: autoDraw = True
+163.5439 	EXP 	sentence: autoDraw = True
+163.5606 	EXP 	fixationCross: autoDraw = False
+165.9162 	EXP 	New trial (rep=0, index=1): {'sentenceID': 51, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The pipe clogged after the rain.'}
+165.9372 	DATA 	Keypress: n
+165.9402 	EXP 	sentence: autoDraw = False
+165.9402 	EXP 	fixationCross: autoDraw = False
+165.9402 	EXP 	sentence: text = 'The pipe clogged after the rain.'
+165.9402 	EXP 	fixationCross: autoDraw = True
+166.9245 	EXP 	sentence: autoDraw = True
+166.9410 	EXP 	fixationCross: autoDraw = False
+169.4387 	EXP 	sentence: autoDraw = False
+169.6947 	EXP 	New trial (rep=0, index=2): {'sentenceID': 20, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The storm sank in the boat.'}
+169.7156 	DATA 	Keypress: n
+169.7187 	EXP 	sentence: autoDraw = False
+169.7187 	EXP 	fixationCross: autoDraw = False
+169.7187 	EXP 	sentence: text = 'The storm sank in the boat.'
+169.7187 	EXP 	fixationCross: autoDraw = True
+170.7048 	EXP 	sentence: autoDraw = True
+170.7214 	EXP 	fixationCross: autoDraw = False
+173.2188 	EXP 	sentence: autoDraw = False
+173.3423 	EXP 	New trial (rep=0, index=3): {'sentenceID': 7, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The baker dissolved the sugar.'}
+173.3638 	DATA 	Keypress: n
+173.3669 	EXP 	sentence: autoDraw = False
+173.3669 	EXP 	fixationCross: autoDraw = False
+173.3669 	EXP 	sentence: text = 'The baker dissolved the sugar.'
+173.3669 	EXP 	fixationCross: autoDraw = True
+174.3517 	EXP 	sentence: autoDraw = True
+174.3682 	EXP 	fixationCross: autoDraw = False
+176.3561 	EXP 	New trial (rep=0, index=4): {'sentenceID': 41, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The hot water shrank the shirt.'}
+176.3763 	DATA 	Keypress: y
+176.3791 	EXP 	sentence: autoDraw = False
+176.3791 	EXP 	fixationCross: autoDraw = False
+176.3791 	EXP 	sentence: text = 'The hot water shrank the shirt.'
+176.3791 	EXP 	fixationCross: autoDraw = True
+177.3659 	EXP 	sentence: autoDraw = True
+177.3825 	EXP 	fixationCross: autoDraw = False
+179.8801 	EXP 	sentence: autoDraw = False
+181.3667 	EXP 	New trial (rep=0, index=5): {'sentenceID': 11, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The cook heated the soup.'}
+181.3880 	EXP 	sentence: autoDraw = False
+181.3880 	EXP 	fixationCross: autoDraw = False
+181.3880 	EXP 	sentence: text = 'The cook heated the soup.'
+181.3880 	EXP 	fixationCross: autoDraw = True
+181.4348 	DATA 	Keypress: n
+182.3783 	EXP 	sentence: autoDraw = True
+182.3950 	EXP 	fixationCross: autoDraw = False
+184.8926 	EXP 	sentence: autoDraw = False
+185.0814 	DATA 	Keypress: y
+185.0987 	EXP 	New trial (rep=0, index=6): {'sentenceID': 42, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The shirt shrank the hot water.'}
+185.1218 	EXP 	sentence: autoDraw = False
+185.1218 	EXP 	fixationCross: autoDraw = False
+185.1218 	EXP 	sentence: text = 'The shirt shrank the hot water.'
+185.1218 	EXP 	fixationCross: autoDraw = True
+186.1088 	EXP 	sentence: autoDraw = True
+186.1254 	EXP 	fixationCross: autoDraw = False
+188.6229 	EXP 	sentence: autoDraw = False
+188.6291 	EXP 	New trial (rep=0, index=7): {'sentenceID': 43, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The cook crumbled the cake.'}
+188.6485 	DATA 	Keypress: n
+188.6516 	EXP 	sentence: autoDraw = False
+188.6516 	EXP 	fixationCross: autoDraw = False
+188.6516 	EXP 	sentence: text = 'The cook crumbled the cake.'
+188.6516 	EXP 	fixationCross: autoDraw = True
+189.6391 	EXP 	sentence: autoDraw = True
+189.6558 	EXP 	fixationCross: autoDraw = False
+192.1533 	EXP 	sentence: autoDraw = False
+192.1766 	EXP 	New trial (rep=0, index=8): {'sentenceID': 2, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The box opened the teacher.'}
+192.1967 	DATA 	Keypress: y
+192.1997 	EXP 	sentence: autoDraw = False
+192.1997 	EXP 	fixationCross: autoDraw = False
+192.1997 	EXP 	sentence: text = 'The box opened the teacher.'
+192.1997 	EXP 	fixationCross: autoDraw = True
+193.1863 	EXP 	sentence: autoDraw = True
+193.2029 	EXP 	fixationCross: autoDraw = False
+195.7004 	EXP 	sentence: autoDraw = False
+196.2564 	EXP 	New trial (rep=0, index=9): {'sentenceID': 13, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The assistant shut the store.'}
+196.2752 	DATA 	Keypress: n
+196.2783 	EXP 	sentence: autoDraw = False
+196.2783 	EXP 	fixationCross: autoDraw = False
+196.2783 	EXP 	sentence: text = 'The assistant shut the store.'
+196.2783 	EXP 	fixationCross: autoDraw = True
+197.2662 	EXP 	sentence: autoDraw = True
+197.2829 	EXP 	fixationCross: autoDraw = False
+199.0042 	EXP 	New trial (rep=0, index=10): {'sentenceID': 25, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The shirt shrank in the wash.'}
+199.0256 	DATA 	Keypress: y
+199.0287 	EXP 	sentence: autoDraw = False
+199.0287 	EXP 	fixationCross: autoDraw = False
+199.0287 	EXP 	sentence: text = 'The shirt shrank in the wash.'
+199.0287 	EXP 	fixationCross: autoDraw = True
+200.0139 	EXP 	sentence: autoDraw = True
+200.0305 	EXP 	fixationCross: autoDraw = False
+201.3539 	DATA 	Keypress: n
+201.3692 	EXP 	New trial (rep=0, index=11): {'sentenceID': 61, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The store shut at six o’clock.'}
+201.4000 	EXP 	sentence: autoDraw = False
+201.4000 	EXP 	fixationCross: autoDraw = False
+201.4000 	EXP 	sentence: text = 'The store shut at six o’clock.'
+201.4000 	EXP 	fixationCross: autoDraw = True
+202.3953 	EXP 	sentence: autoDraw = True
+202.4118 	EXP 	fixationCross: autoDraw = False
+204.1497 	EXP 	New trial (rep=0, index=12): {'sentenceID': 63, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The sweater tore along the seams.'}
+204.1776 	DATA 	Keypress: n
+204.1804 	EXP 	sentence: autoDraw = False
+204.1804 	EXP 	fixationCross: autoDraw = False
+204.1804 	EXP 	sentence: text = 'The sweater tore along the seams.'
+204.1804 	EXP 	fixationCross: autoDraw = True
+205.1765 	EXP 	sentence: autoDraw = True
+205.1931 	EXP 	fixationCross: autoDraw = False
+207.6905 	EXP 	sentence: autoDraw = False
+209.1768 	EXP 	New trial (rep=0, index=13): {'sentenceID': 56, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The baker dissolved in the milk.'}
+209.1997 	EXP 	sentence: autoDraw = False
+209.1997 	EXP 	fixationCross: autoDraw = False
+209.1997 	EXP 	sentence: text = 'The baker dissolved in the milk.'
+209.1997 	EXP 	fixationCross: autoDraw = True
+210.1890 	EXP 	sentence: autoDraw = True
+210.2056 	EXP 	fixationCross: autoDraw = False
+212.1297 	DATA 	Keypress: n
+212.1432 	EXP 	New trial (rep=0, index=14): {'sentenceID': 30, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The boy burst behind the balloon.'}
+212.1657 	EXP 	sentence: autoDraw = False
+212.1657 	EXP 	fixationCross: autoDraw = False
+212.1657 	EXP 	sentence: text = 'The boy burst behind the balloon.'
+212.1657 	EXP 	fixationCross: autoDraw = True
+213.1532 	EXP 	sentence: autoDraw = True
+213.1698 	EXP 	fixationCross: autoDraw = False
+215.6093 	DATA 	Keypress: n
+215.6238 	EXP 	New trial (rep=0, index=15): {'sentenceID': 46, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The balloon burst the boy.'}
+215.6453 	EXP 	sentence: autoDraw = False
+215.6453 	EXP 	fixationCross: autoDraw = False
+215.6453 	EXP 	sentence: text = 'The balloon burst the boy.'
+215.6453 	EXP 	fixationCross: autoDraw = True
+216.6336 	EXP 	sentence: autoDraw = True
+216.6503 	EXP 	fixationCross: autoDraw = False
+218.1553 	EXP 	New trial (rep=0, index=16): {'sentenceID': 59, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The soup heated in the pot.'}
+218.1746 	DATA 	Keypress: n
+218.1775 	EXP 	sentence: autoDraw = False
+218.1775 	EXP 	fixationCross: autoDraw = False
+218.1775 	EXP 	sentence: text = 'The soup heated in the pot.'
+218.1775 	EXP 	fixationCross: autoDraw = True
+219.1648 	EXP 	sentence: autoDraw = True
+219.1812 	EXP 	fixationCross: autoDraw = False
+220.8859 	EXP 	New trial (rep=0, index=17): {'sentenceID': 1, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The teacher opened the box. '}
+220.9124 	DATA 	Keypress: y
+220.9154 	EXP 	sentence: autoDraw = False
+220.9154 	EXP 	fixationCross: autoDraw = False
+220.9154 	EXP 	sentence: text = 'The teacher opened the box. '
+220.9154 	EXP 	fixationCross: autoDraw = True
+221.9128 	EXP 	sentence: autoDraw = True
+221.9291 	EXP 	fixationCross: autoDraw = False
+223.2706 	DATA 	Keypress: y
+223.2846 	EXP 	New trial (rep=0, index=18): {'sentenceID': 36, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The boat sank the waves.'}
+223.3094 	EXP 	sentence: autoDraw = False
+223.3094 	EXP 	fixationCross: autoDraw = False
+223.3094 	EXP 	sentence: text = 'The boat sank the waves.'
+223.3094 	EXP 	fixationCross: autoDraw = True
+224.2939 	EXP 	sentence: autoDraw = True
+224.3106 	EXP 	fixationCross: autoDraw = False
+226.8080 	EXP 	sentence: autoDraw = False
+227.0304 	DATA 	Keypress: n
+227.0475 	EXP 	New trial (rep=0, index=19): {'sentenceID': 6, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The wine poured the waiter.'}
+227.0693 	EXP 	sentence: autoDraw = False
+227.0693 	EXP 	fixationCross: autoDraw = False
+227.0693 	EXP 	sentence: text = 'The wine poured the waiter.'
+227.0693 	EXP 	fixationCross: autoDraw = True
+228.0574 	EXP 	sentence: autoDraw = True
+228.0739 	EXP 	fixationCross: autoDraw = False
+229.7793 	EXP 	New trial (rep=0, index=20): {'sentenceID': 54, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The table poured over the wine.'}
+229.8023 	DATA 	Keypress: n
+229.8051 	EXP 	sentence: autoDraw = False
+229.8051 	EXP 	fixationCross: autoDraw = False
+229.8051 	EXP 	sentence: text = 'The table poured over the wine.'
+229.8051 	EXP 	fixationCross: autoDraw = True
+230.7888 	EXP 	sentence: autoDraw = True
+230.8054 	EXP 	fixationCross: autoDraw = False
+233.1281 	DATA 	Keypress: n
+233.1432 	EXP 	New trial (rep=0, index=21): {'sentenceID': 38, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The bomb exploded the guards.'}
+233.1658 	EXP 	sentence: autoDraw = False
+233.1658 	EXP 	fixationCross: autoDraw = False
+233.1658 	EXP 	sentence: text = 'The bomb exploded the guards.'
+233.1658 	EXP 	fixationCross: autoDraw = True
+234.1526 	EXP 	sentence: autoDraw = True
+234.1693 	EXP 	fixationCross: autoDraw = False
+236.0742 	EXP 	New trial (rep=0, index=22): {'sentenceID': 48, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The soup boiled the cook.'}
+236.0925 	DATA 	Keypress: y
+236.0956 	EXP 	sentence: autoDraw = False
+236.0956 	EXP 	fixationCross: autoDraw = False
+236.0956 	EXP 	sentence: text = 'The soup boiled the cook.'
+236.0956 	EXP 	fixationCross: autoDraw = True
+237.0835 	EXP 	sentence: autoDraw = True
+237.1001 	EXP 	fixationCross: autoDraw = False
+239.2903 	DATA 	Keypress: n
+239.3051 	EXP 	New trial (rep=0, index=23): {'sentenceID': 39, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The sun hardened the sand.'}
+239.3273 	EXP 	sentence: autoDraw = False
+239.3273 	EXP 	fixationCross: autoDraw = False
+239.3273 	EXP 	sentence: text = 'The sun hardened the sand.'
+239.3273 	EXP 	fixationCross: autoDraw = True
+240.3141 	EXP 	sentence: autoDraw = True
+240.3307 	EXP 	fixationCross: autoDraw = False
+242.0191 	EXP 	New trial (rep=0, index=24): {'sentenceID': 49, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The box opened after a short while.'}
+242.0427 	DATA 	Keypress: y
+242.0455 	EXP 	sentence: autoDraw = False
+242.0455 	EXP 	fixationCross: autoDraw = False
+242.0455 	EXP 	sentence: text = 'The box opened after a short while.'
+242.0455 	EXP 	fixationCross: autoDraw = True
+243.0287 	EXP 	sentence: autoDraw = True
+243.0453 	EXP 	fixationCross: autoDraw = False
+245.1665 	EXP 	New trial (rep=0, index=25): {'sentenceID': 15, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The girl tore her sweater.'}
+245.1840 	DATA 	Keypress: y
+245.1868 	EXP 	sentence: autoDraw = False
+245.1868 	EXP 	fixationCross: autoDraw = False
+245.1868 	EXP 	sentence: text = 'The girl tore her sweater.'
+245.1868 	EXP 	fixationCross: autoDraw = True
+246.1759 	EXP 	sentence: autoDraw = True
+246.1926 	EXP 	fixationCross: autoDraw = False
+248.1138 	EXP 	New trial (rep=0, index=26): {'sentenceID': 21, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The bomb exploded in the street.'}
+248.1353 	DATA 	Keypress: y
+248.1385 	EXP 	sentence: autoDraw = False
+248.1385 	EXP 	fixationCross: autoDraw = False
+248.1385 	EXP 	sentence: text = 'The bomb exploded in the street.'
+248.1385 	EXP 	fixationCross: autoDraw = True
+249.1237 	EXP 	sentence: autoDraw = True
+249.1403 	EXP 	fixationCross: autoDraw = False
+250.7980 	DATA 	Keypress: y
+250.8121 	EXP 	New trial (rep=0, index=27): {'sentenceID': 44, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The cake crumbled the cook.'}
+250.8350 	EXP 	sentence: autoDraw = False
+250.8350 	EXP 	fixationCross: autoDraw = False
+250.8350 	EXP 	sentence: text = 'The cake crumbled the cook.'
+250.8350 	EXP 	fixationCross: autoDraw = True
+251.8214 	EXP 	sentence: autoDraw = True
+251.8378 	EXP 	fixationCross: autoDraw = False
+253.7759 	EXP 	New trial (rep=0, index=28): {'sentenceID': 62, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The assistant shut at six o’clock.'}
+253.7994 	DATA 	Keypress: n
+253.8022 	EXP 	sentence: autoDraw = False
+253.8022 	EXP 	fixationCross: autoDraw = False
+253.8022 	EXP 	sentence: text = 'The assistant shut at six o’clock.'
+253.8022 	EXP 	fixationCross: autoDraw = True
+254.7857 	EXP 	sentence: autoDraw = True
+254.8022 	EXP 	fixationCross: autoDraw = False
+256.6752 	DATA 	Keypress: n
+256.6903 	EXP 	New trial (rep=0, index=29): {'sentenceID': 4, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The pipe clogged the leaves.'}
+256.7119 	EXP 	sentence: autoDraw = False
+256.7119 	EXP 	fixationCross: autoDraw = False
+256.7119 	EXP 	sentence: text = 'The pipe clogged the leaves.'
+256.7119 	EXP 	fixationCross: autoDraw = True
+257.6998 	EXP 	sentence: autoDraw = True
+257.7165 	EXP 	fixationCross: autoDraw = False
+259.5379 	EXP 	New trial (rep=0, index=30): {'sentenceID': 34, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'Flowers grow his parents on their balcony.'}
+259.5693 	DATA 	Keypress: n
+259.5721 	EXP 	sentence: autoDraw = False
+259.5721 	EXP 	fixationCross: autoDraw = False
+259.5721 	EXP 	sentence: text = 'Flowers grow his parents on their balcony.'
+259.5721 	EXP 	fixationCross: autoDraw = True
+260.5642 	EXP 	sentence: autoDraw = True
+260.5810 	EXP 	fixationCross: autoDraw = False
+263.0783 	EXP 	sentence: autoDraw = False
+263.5841 	EXP 	New trial (rep=0, index=31): {'sentenceID': 23, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The concrete hardened in the sun.'}
+263.6046 	DATA 	Keypress: n
+263.6076 	EXP 	sentence: autoDraw = False
+263.6076 	EXP 	fixationCross: autoDraw = False
+263.6076 	EXP 	sentence: text = 'The concrete hardened in the sun.'
+263.6076 	EXP 	fixationCross: autoDraw = True
+264.5941 	EXP 	sentence: autoDraw = True
+264.6109 	EXP 	fixationCross: autoDraw = False
+266.5177 	DATA 	Keypress: n
+266.5324 	EXP 	New trial (rep=0, index=32): {'sentenceID': 47, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The cook boiled the soup.'}
+266.5543 	EXP 	sentence: autoDraw = False
+266.5543 	EXP 	fixationCross: autoDraw = False
+266.5543 	EXP 	sentence: text = 'The cook boiled the soup.'
+266.5543 	EXP 	fixationCross: autoDraw = True
+267.5418 	EXP 	sentence: autoDraw = True
+267.5584 	EXP 	fixationCross: autoDraw = False
+269.0297 	EXP 	New trial (rep=0, index=33): {'sentenceID': 35, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The waves sank the boat.'}
+269.0491 	DATA 	Keypress: y
+269.0521 	EXP 	sentence: autoDraw = False
+269.0521 	EXP 	fixationCross: autoDraw = False
+269.0521 	EXP 	sentence: text = 'The waves sank the boat.'
+269.0521 	EXP 	fixationCross: autoDraw = True
+270.0396 	EXP 	sentence: autoDraw = True
+270.0562 	EXP 	fixationCross: autoDraw = False
+272.5425 	DATA 	Keypress: y
+272.5539 	EXP 	sentence: autoDraw = False
+272.5601 	EXP 	New trial (rep=0, index=34): {'sentenceID': 18, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The clusters grew in the flowers.'}
+272.5830 	EXP 	sentence: autoDraw = False
+272.5830 	EXP 	fixationCross: autoDraw = False
+272.5830 	EXP 	sentence: text = 'The clusters grew in the flowers.'
+272.5830 	EXP 	fixationCross: autoDraw = True
+273.5702 	EXP 	sentence: autoDraw = True
+273.5867 	EXP 	fixationCross: autoDraw = False
+276.0843 	EXP 	sentence: autoDraw = False
+277.5705 	EXP 	New trial (rep=0, index=35): {'sentenceID': 40, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The sand hardened the sun.'}
+277.5916 	EXP 	sentence: autoDraw = False
+277.5916 	EXP 	fixationCross: autoDraw = False
+277.5916 	EXP 	sentence: text = 'The sand hardened the sun.'
+277.5916 	EXP 	fixationCross: autoDraw = True
+278.5827 	EXP 	sentence: autoDraw = True
+278.5993 	EXP 	fixationCross: autoDraw = False
+279.9542 	EXP 	New trial (rep=0, index=36): {'sentenceID': 45, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The boy burst the balloon.'}
+279.9735 	DATA 	Keypress: y
+279.9765 	EXP 	sentence: autoDraw = False
+279.9765 	EXP 	fixationCross: autoDraw = False
+279.9765 	EXP 	sentence: text = 'The boy burst the balloon.'
+279.9765 	EXP 	fixationCross: autoDraw = True
+280.9640 	EXP 	sentence: autoDraw = True
+280.9808 	EXP 	fixationCross: autoDraw = False
+282.8521 	EXP 	New trial (rep=0, index=37): {'sentenceID': 9, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The heat softened the butter.'}
+282.8715 	DATA 	Keypress: y
+282.8747 	EXP 	sentence: autoDraw = False
+282.8747 	EXP 	fixationCross: autoDraw = False
+282.8747 	EXP 	sentence: text = 'The heat softened the butter.'
+282.8747 	EXP 	fixationCross: autoDraw = True
+283.8617 	EXP 	sentence: autoDraw = True
+283.8783 	EXP 	fixationCross: autoDraw = False
+286.3758 	EXP 	sentence: autoDraw = False
+287.8628 	EXP 	New trial (rep=0, index=38): {'sentenceID': 33, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'His parents grow flowers on their balcony.'}
+287.9045 	EXP 	sentence: autoDraw = False
+287.9045 	EXP 	fixationCross: autoDraw = False
+287.9045 	EXP 	sentence: text = 'His parents grow flowers on their balcony.'
+287.9045 	EXP 	fixationCross: autoDraw = True
+288.8908 	EXP 	sentence: autoDraw = True
+288.9075 	EXP 	fixationCross: autoDraw = False
+291.0127 	DATA 	Keypress: y
+291.0282 	EXP 	New trial (rep=0, index=39): {'sentenceID': 50, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The teacher opened after a short while.'}
+291.0486 	EXP 	sentence: autoDraw = False
+291.0486 	EXP 	fixationCross: autoDraw = False
+291.0486 	EXP 	sentence: text = 'The teacher opened after a short while.'
+291.0486 	EXP 	fixationCross: autoDraw = True
+292.0381 	EXP 	sentence: autoDraw = True
+292.0548 	EXP 	fixationCross: autoDraw = False
+294.5524 	EXP 	sentence: autoDraw = False
+296.0387 	EXP 	New trial (rep=0, index=40): {'sentenceID': 26, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The wash shrank in the shirt.'}
+296.0604 	EXP 	sentence: autoDraw = False
+296.0604 	EXP 	fixationCross: autoDraw = False
+296.0604 	EXP 	sentence: text = 'The wash shrank in the shirt.'
+296.0604 	EXP 	fixationCross: autoDraw = True
+297.0509 	EXP 	sentence: autoDraw = True
+297.0674 	EXP 	fixationCross: autoDraw = False
+298.5582 	DATA 	Keypress: n
+298.5724 	EXP 	New trial (rep=0, index=41): {'sentenceID': 37, 'isConcordant': False, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The guards exploded the bomb.'}
+298.5963 	EXP 	sentence: autoDraw = False
+298.5963 	EXP 	fixationCross: autoDraw = False
+298.5963 	EXP 	sentence: text = 'The guards exploded the bomb.'
+298.5963 	EXP 	fixationCross: autoDraw = True
+299.5821 	EXP 	sentence: autoDraw = True
+299.5987 	EXP 	fixationCross: autoDraw = False
+301.7361 	EXP 	New trial (rep=0, index=42): {'sentenceID': 58, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The heat softened the butter.'}
+301.7564 	DATA 	Keypress: y
+301.7593 	EXP 	sentence: autoDraw = False
+301.7593 	EXP 	fixationCross: autoDraw = False
+301.7593 	EXP 	sentence: text = 'The heat softened the butter.'
+301.7593 	EXP 	fixationCross: autoDraw = True
+302.7462 	EXP 	sentence: autoDraw = True
+302.7627 	EXP 	fixationCross: autoDraw = False
+305.2603 	EXP 	sentence: autoDraw = False
+305.7661 	EXP 	New trial (rep=0, index=43): {'sentenceID': 5, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The waiter poured the wine.'}
+305.7854 	DATA 	Keypress: y
+305.7887 	EXP 	sentence: autoDraw = False
+305.7887 	EXP 	fixationCross: autoDraw = False
+305.7887 	EXP 	sentence: text = 'The waiter poured the wine.'
+305.7887 	EXP 	fixationCross: autoDraw = True
+306.7762 	EXP 	sentence: autoDraw = True
+306.7927 	EXP 	fixationCross: autoDraw = False
+308.5310 	EXP 	New trial (rep=0, index=44): {'sentenceID': 31, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The soup boiled in the pot.'}
+308.5495 	DATA 	Keypress: y
+308.5526 	EXP 	sentence: autoDraw = False
+308.5526 	EXP 	fixationCross: autoDraw = False
+308.5526 	EXP 	sentence: text = 'The soup boiled in the pot.'
+308.5526 	EXP 	fixationCross: autoDraw = True
+309.5406 	EXP 	sentence: autoDraw = True
+309.5572 	EXP 	fixationCross: autoDraw = False
+311.1637 	DATA 	Keypress: y
+311.1786 	EXP 	New trial (rep=0, index=45): {'sentenceID': 14, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The store shut the assistant.'}
+311.2034 	EXP 	sentence: autoDraw = False
+311.2034 	EXP 	fixationCross: autoDraw = False
+311.2034 	EXP 	sentence: text = 'The store shut the assistant.'
+311.2034 	EXP 	fixationCross: autoDraw = True
+312.1884 	EXP 	sentence: autoDraw = True
+312.2050 	EXP 	fixationCross: autoDraw = False
+313.7616 	DATA 	Keypress: n
+313.7774 	EXP 	New trial (rep=0, index=46): {'sentenceID': 8, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The sugar dissolved the baker.'}
+313.7991 	EXP 	sentence: autoDraw = False
+313.7991 	EXP 	fixationCross: autoDraw = False
+313.7991 	EXP 	sentence: text = 'The sugar dissolved the baker.'
+313.7991 	EXP 	fixationCross: autoDraw = True
+314.7863 	EXP 	sentence: autoDraw = True
+314.8029 	EXP 	fixationCross: autoDraw = False
+316.8923 	DATA 	Keypress: n
+316.9076 	EXP 	New trial (rep=0, index=47): {'sentenceID': 19, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The boat sank in the storm.'}
+316.9309 	EXP 	sentence: autoDraw = False
+316.9309 	EXP 	fixationCross: autoDraw = False
+316.9309 	EXP 	sentence: text = 'The boat sank in the storm.'
+316.9309 	EXP 	fixationCross: autoDraw = True
+317.9171 	EXP 	sentence: autoDraw = True
+317.9336 	EXP 	fixationCross: autoDraw = False
+320.4313 	EXP 	sentence: autoDraw = False
+321.8871 	EXP 	New trial (rep=0, index=48): {'sentenceID': 28, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'My hands crumbled in the cake.'}
+321.9142 	DATA 	Keypress: y
+321.9175 	EXP 	sentence: autoDraw = False
+321.9175 	EXP 	fixationCross: autoDraw = False
+321.9175 	EXP 	sentence: text = 'My hands crumbled in the cake.'
+321.9175 	EXP 	fixationCross: autoDraw = True
+322.9130 	EXP 	sentence: autoDraw = True
+322.9295 	EXP 	fixationCross: autoDraw = False
+325.1842 	EXP 	New trial (rep=0, index=49): {'sentenceID': 32, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The cook boiled in the pot.'}
+325.2051 	DATA 	Keypress: n
+325.2079 	EXP 	sentence: autoDraw = False
+325.2079 	EXP 	fixationCross: autoDraw = False
+325.2079 	EXP 	sentence: text = 'The cook boiled in the pot.'
+325.2079 	EXP 	fixationCross: autoDraw = True
+326.1934 	EXP 	sentence: autoDraw = True
+326.2101 	EXP 	fixationCross: autoDraw = False
+328.1495 	DATA 	Keypress: n
+328.1649 	EXP 	New trial (rep=0, index=50): {'sentenceID': 52, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The leaves clogged after the rain.'}
+328.1867 	EXP 	sentence: autoDraw = False
+328.1867 	EXP 	fixationCross: autoDraw = False
+328.1867 	EXP 	sentence: text = 'The leaves clogged after the rain.'
+328.1867 	EXP 	fixationCross: autoDraw = True
+329.1745 	EXP 	sentence: autoDraw = True
+329.1911 	EXP 	fixationCross: autoDraw = False
+331.0290 	EXP 	New trial (rep=0, index=51): {'sentenceID': 57, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The butter softened in the heat.'}
+331.0490 	DATA 	Keypress: n
+331.0519 	EXP 	sentence: autoDraw = False
+331.0519 	EXP 	fixationCross: autoDraw = False
+331.0519 	EXP 	sentence: text = 'The butter softened in the heat.'
+331.0519 	EXP 	fixationCross: autoDraw = True
+332.0388 	EXP 	sentence: autoDraw = True
+332.0554 	EXP 	fixationCross: autoDraw = False
+334.5528 	EXP 	sentence: autoDraw = False
+335.0255 	EXP 	New trial (rep=0, index=52): {'sentenceID': 29, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The balloon burst behind the boy.'}
+335.0468 	DATA 	Keypress: y
+335.0498 	EXP 	sentence: autoDraw = False
+335.0498 	EXP 	fixationCross: autoDraw = False
+335.0498 	EXP 	sentence: text = 'The balloon burst behind the boy.'
+335.0498 	EXP 	fixationCross: autoDraw = True
+336.0355 	EXP 	sentence: autoDraw = True
+336.0522 	EXP 	fixationCross: autoDraw = False
+337.8921 	DATA 	Keypress: y
+337.9066 	EXP 	New trial (rep=0, index=53): {'sentenceID': 24, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The sun hardened in the concrete.'}
+337.9293 	EXP 	sentence: autoDraw = False
+337.9293 	EXP 	fixationCross: autoDraw = False
+337.9293 	EXP 	sentence: text = 'The sun hardened in the concrete.'
+337.9293 	EXP 	fixationCross: autoDraw = True
+338.9165 	EXP 	sentence: autoDraw = True
+338.9330 	EXP 	fixationCross: autoDraw = False
+341.4207 	EXP 	New trial (rep=0, index=54): {'sentenceID': 53, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The wine poured over the table.'}
+341.4392 	DATA 	Keypress: n
+341.4426 	EXP 	sentence: autoDraw = False
+341.4426 	EXP 	sentence: autoDraw = False
+341.4426 	EXP 	fixationCross: autoDraw = False
+341.4426 	EXP 	sentence: text = 'The wine poured over the table.'
+341.4426 	EXP 	fixationCross: autoDraw = True
+342.4304 	EXP 	sentence: autoDraw = True
+342.4469 	EXP 	fixationCross: autoDraw = False
+344.9443 	EXP 	sentence: autoDraw = False
+346.4303 	EXP 	New trial (rep=0, index=55): {'sentenceID': 3, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': True, 'sentenceContent': 'The leaves clogged the pipe.'}
+346.4515 	EXP 	sentence: autoDraw = False
+346.4515 	EXP 	fixationCross: autoDraw = False
+346.4515 	EXP 	sentence: text = 'The leaves clogged the pipe.'
+346.4515 	EXP 	fixationCross: autoDraw = True
+347.4429 	EXP 	sentence: autoDraw = True
+347.4594 	EXP 	fixationCross: autoDraw = False
+348.8147 	EXP 	New trial (rep=0, index=56): {'sentenceID': 17, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The flowers grew in clusters.'}
+348.8377 	DATA 	Keypress: y
+348.8408 	EXP 	sentence: autoDraw = False
+348.8408 	EXP 	fixationCross: autoDraw = False
+348.8408 	EXP 	sentence: text = 'The flowers grew in clusters.'
+348.8408 	EXP 	fixationCross: autoDraw = True
+349.8240 	EXP 	sentence: autoDraw = True
+349.8408 	EXP 	fixationCross: autoDraw = False
+352.3382 	EXP 	sentence: autoDraw = False
+353.8243 	EXP 	New trial (rep=0, index=57): {'sentenceID': 55, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The sugar dissolved in the milk.'}
+353.8480 	EXP 	sentence: autoDraw = False
+353.8480 	EXP 	fixationCross: autoDraw = False
+353.8480 	EXP 	sentence: text = 'The sugar dissolved in the milk.'
+353.8480 	EXP 	fixationCross: autoDraw = True
+354.8367 	EXP 	sentence: autoDraw = True
+354.8532 	EXP 	fixationCross: autoDraw = False
+356.4085 	EXP 	New trial (rep=0, index=58): {'sentenceID': 64, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The seams tore along the sweater.'}
+356.4316 	DATA 	Keypress: y
+356.4344 	EXP 	sentence: autoDraw = False
+356.4344 	EXP 	fixationCross: autoDraw = False
+356.4344 	EXP 	sentence: text = 'The seams tore along the sweater.'
+356.4344 	EXP 	fixationCross: autoDraw = True
+357.4177 	EXP 	sentence: autoDraw = True
+357.4344 	EXP 	fixationCross: autoDraw = False
+359.9320 	EXP 	sentence: autoDraw = False
+361.4184 	EXP 	New trial (rep=0, index=59): {'sentenceID': 27, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': True, 'sentenceContent': 'The cake crumbled in my hands.'}
+361.4428 	EXP 	sentence: autoDraw = False
+361.4428 	EXP 	fixationCross: autoDraw = False
+361.4428 	EXP 	sentence: text = 'The cake crumbled in my hands.'
+361.4428 	EXP 	fixationCross: autoDraw = True
+362.4303 	EXP 	sentence: autoDraw = True
+362.4471 	EXP 	fixationCross: autoDraw = False
+364.9446 	EXP 	sentence: autoDraw = False
+366.4309 	EXP 	New trial (rep=0, index=60): {'sentenceID': 22, 'isConcordant': True, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The street exploded in the bomb.'}
+366.4546 	EXP 	sentence: autoDraw = False
+366.4546 	EXP 	fixationCross: autoDraw = False
+366.4546 	EXP 	sentence: text = 'The street exploded in the bomb.'
+366.4546 	EXP 	fixationCross: autoDraw = True
+367.4431 	EXP 	sentence: autoDraw = True
+367.4595 	EXP 	fixationCross: autoDraw = False
+369.7476 	EXP 	New trial (rep=0, index=61): {'sentenceID': 16, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The sweater tore the girl.'}
+369.7654 	DATA 	Keypress: y
+369.7681 	EXP 	sentence: autoDraw = False
+369.7681 	EXP 	fixationCross: autoDraw = False
+369.7681 	EXP 	sentence: text = 'The sweater tore the girl.'
+369.7681 	EXP 	fixationCross: autoDraw = True
+370.7569 	EXP 	sentence: autoDraw = True
+370.7734 	EXP 	fixationCross: autoDraw = False
+372.4455 	EXP 	New trial (rep=0, index=62): {'sentenceID': 60, 'isConcordant': False, 'sentenceType': 'intransitive', 'isPlausible': False, 'sentenceContent': 'The cook heated in the soup.'}
+372.4669 	DATA 	Keypress: n
+372.4699 	EXP 	sentence: autoDraw = False
+372.4699 	EXP 	fixationCross: autoDraw = False
+372.4699 	EXP 	sentence: text = 'The cook heated in the soup.'
+372.4699 	EXP 	fixationCross: autoDraw = True
+373.4546 	EXP 	sentence: autoDraw = True
+373.4713 	EXP 	fixationCross: autoDraw = False
+375.9689 	EXP 	sentence: autoDraw = False
+377.4550 	EXP 	New trial (rep=0, index=63): {'sentenceID': 10, 'isConcordant': True, 'sentenceType': 'transitive', 'isPlausible': False, 'sentenceContent': 'The butter softened the heat.'}
+377.4770 	EXP 	sentence: autoDraw = False
+377.4770 	EXP 	fixationCross: autoDraw = False
+377.4770 	EXP 	sentence: text = 'The butter softened the heat.'
+377.4770 	EXP 	fixationCross: autoDraw = True
+378.4672 	EXP 	sentence: autoDraw = True
+378.4838 	EXP 	fixationCross: autoDraw = False
+380.9814 	EXP 	sentence: autoDraw = False
+381.1290 	DATA 	Keypress: n
+381.1331 	EXP 	sentence: autoDraw = False
+381.1331 	EXP 	fixationCross: autoDraw = False
+381.1331 	EXP 	debriefText: autoDraw = True
+388.1422 	EXP 	debriefText: autoDraw = False
+388.1422 	EXP 	debriefText: autoDraw = False
+388.4137 	EXP 	window1: mouseVisible = True

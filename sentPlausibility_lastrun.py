@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on prosinec 01, 2021, at 12:57
+    on prosinec 01, 2021, at 15:16
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -105,17 +105,6 @@ isNative = visual.TextStim(win=win, name='isNative',
     languageStyle='LTR',
     depth=0.0);
 isNativeResp = keyboard.Keyboard()
-
-# Initialize components for Routine "readProb"
-readProbClock = core.Clock()
-hasReadProb = visual.TextStim(win=win, name='hasReadProb',
-    text="Do you experience any problems with reading?\n\nPress 'y' for yes, 'n' for no.",
-    font='Open Sans',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=0.0);
-hasReadProbResp = keyboard.Keyboard()
 
 # Initialize components for Routine "practiceInfo"
 practiceInfoClock = core.Clock()
@@ -428,102 +417,6 @@ thisExp.addData('isNativeResp.started', isNativeResp.tStartRefresh)
 thisExp.addData('isNativeResp.stopped', isNativeResp.tStopRefresh)
 thisExp.nextEntry()
 # the Routine "native" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
-
-# ------Prepare to start Routine "readProb"-------
-continueRoutine = True
-# update component parameters for each repeat
-hasReadProbResp.keys = []
-hasReadProbResp.rt = []
-_hasReadProbResp_allKeys = []
-# keep track of which components have finished
-readProbComponents = [hasReadProb, hasReadProbResp]
-for thisComponent in readProbComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-readProbClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-
-# -------Run Routine "readProb"-------
-while continueRoutine:
-    # get current time
-    t = readProbClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=readProbClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *hasReadProb* updates
-    if hasReadProb.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        hasReadProb.frameNStart = frameN  # exact frame index
-        hasReadProb.tStart = t  # local t and not account for scr refresh
-        hasReadProb.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(hasReadProb, 'tStartRefresh')  # time at next scr refresh
-        hasReadProb.setAutoDraw(True)
-    
-    # *hasReadProbResp* updates
-    waitOnFlip = False
-    if hasReadProbResp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        hasReadProbResp.frameNStart = frameN  # exact frame index
-        hasReadProbResp.tStart = t  # local t and not account for scr refresh
-        hasReadProbResp.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(hasReadProbResp, 'tStartRefresh')  # time at next scr refresh
-        hasReadProbResp.status = STARTED
-        # keyboard checking is just starting
-        waitOnFlip = True
-        win.callOnFlip(hasReadProbResp.clock.reset)  # t=0 on next screen flip
-        win.callOnFlip(hasReadProbResp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-    if hasReadProbResp.status == STARTED and not waitOnFlip:
-        theseKeys = hasReadProbResp.getKeys(keyList=['y', 'n'], waitRelease=False)
-        _hasReadProbResp_allKeys.extend(theseKeys)
-        if len(_hasReadProbResp_allKeys):
-            hasReadProbResp.keys = _hasReadProbResp_allKeys[-1].name  # just the last key pressed
-            hasReadProbResp.rt = _hasReadProbResp_allKeys[-1].rt
-            # a response ends the routine
-            continueRoutine = False
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in readProbComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "readProb"-------
-for thisComponent in readProbComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-thisExp.addData('hasReadProb.started', hasReadProb.tStartRefresh)
-thisExp.addData('hasReadProb.stopped', hasReadProb.tStopRefresh)
-# check responses
-if hasReadProbResp.keys in ['', [], None]:  # No response was made
-    hasReadProbResp.keys = None
-thisExp.addData('hasReadProbResp.keys',hasReadProbResp.keys)
-if hasReadProbResp.keys != None:  # we had a response
-    thisExp.addData('hasReadProbResp.rt', hasReadProbResp.rt)
-thisExp.addData('hasReadProbResp.started', hasReadProbResp.tStartRefresh)
-thisExp.addData('hasReadProbResp.stopped', hasReadProbResp.tStopRefresh)
-thisExp.nextEntry()
-# the Routine "readProb" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # ------Prepare to start Routine "practiceInfo"-------

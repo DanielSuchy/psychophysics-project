@@ -621,7 +621,6 @@
   <Flow>
     <Routine name="instructions"/>
     <Routine name="native"/>
-    <Routine name="readProb"/>
     <Routine name="practiceInfo"/>
     <Routine name="practice1"/>
     <Routine name="feedback1"/>
