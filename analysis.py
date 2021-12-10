@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from os import listdir
-from statistics import mean
+from statistics import mean, stdev
 from statsmodels.stats.anova import AnovaRM
 from scipy.stats import ttest_ind
 from scipy.stats import norm
@@ -29,6 +29,7 @@ responses = responses.rename(columns={"sentenceResp.keys": "response", "sentence
 #put native info into every judgement
 # participants 1,2,3 non-native, others native
 #add boolean value to the column "native" based on participant ID
+# based on https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html
 responses["native"] = None
 responses.loc[responses["participant"] <= 3, "native"] = False
 responses.loc[responses["participant"] > 3, "native"] = True
@@ -52,6 +53,8 @@ incorrectPlausible = responses[(responses["response"] == "n") & (responses["isPl
 incorrectInplausible = responses[(responses["response"] == "y") & (responses["isPlausible"] == False)] #47
 
 # reaction times by plausibility
+print("Avg reaction time: ", mean(responses["reactionTime"]))
+print("SD reaction time: ", stdev(responses["reactionTime"]))
 print("Correct mean RT:", mean(correct["reactionTime"]))
 print("Incorrect mean RT:", mean(incorrect["reactionTime"]))
 print("Correct plausible mean RT:", mean(correctPlausible["reactionTime"]))
@@ -61,6 +64,15 @@ print("Incorrect inplausible mean RT:", mean(incorrectInplausible["reactionTime"
 
 print("Correct:Incorrect t-test:", ttest_ind(correct["reactionTime"], incorrect["reactionTime"]))
 
+#plausible vs. inplausible
+plausible = responses[responses["isPlausible"] == True]
+inplausible = responses[responses["isPlausible"] == False]
+print("Plausible mean RT:", mean(plausible["reactionTime"]))
+print("Inplausible mean RT:", mean(inplausible["reactionTime"]))
+print("Plausible:inplasible t-test:", ttest_ind(correct["reactionTime"], incorrect["reactionTime"]))
+
+#chart reaction times according to plausibility and correctness
+#adopted from psychophysics lab materials
 fig, ax = plt.subplots()
 box = ax.boxplot([correctPlausible["reactionTime"], correctInplausible["reactionTime"], incorrectPlausible["reactionTime"], incorrectInplausible["reactionTime"]])
 ax.set_ylabel("RT (s)")
@@ -88,6 +100,14 @@ print("Incorrect Mismatching bias mean RT:", mean(incorrectMismatchingBias["reac
 
 print("Matching:mismatching t-test:", ttest_ind(matchingBias["reactionTime"], mismatchingBias["reactionTime"]))
 
+#adopted from psychophysics lab materials
+fig, ax = plt.subplots()
+box = ax.boxplot([matchingBias["reactionTime"], mismatchingBias["reactionTime"]])
+ax.set_ylabel("RT (s)")
+ax.set_xticklabels(["matches bias", "mismatches bias"])
+plt.show()
+
+#adopted from psychophysics lab materials
 fig, ax = plt.subplots()
 box = ax.boxplot([correctMatchingBias["reactionTime"], incorrectMatchingBias["reactionTime"], correctMismatchingBias["reactionTime"], incorrectMismatchingBias["reactionTime"]])
 ax.set_ylabel("RT (s)")
@@ -95,11 +115,16 @@ ax.set_xticklabels(["CorrMatch", "IncorrMatch", "CorrMismatch", "IncorrMismatch"
 plt.show()
 
 #ANOVA on RTs
+#adopted from psychophysics lab materials
 independentVariables = ["participant", "isConcordant", "isPlausible"]
 meanRTs = responses.groupby(by=independentVariables)["reactionTime"].mean().reset_index()
 model = AnovaRM(data = meanRTs, depvar = "reactionTime",
 subject = "participant", within = ["isConcordant", "isPlausible"]).fit()
 print(model)
+
+# what is the standard deviation of RTs of different participants?
+meanByParticipant = responses.groupby(by="participant")["reactionTime"].mean().reset_index()
+print("Stdev by participant", stdev(meanByParticipant["reactionTime"]))
 
 #add isCorrectColumn to responses
 def getResponseType(isPlausible, response):
@@ -114,13 +139,16 @@ def getResponseType(isPlausible, response):
     else:
         return None
 
+# based on aswer by Ruggero Turra at https://stackoverflow.com/questions/30631841/pandas-how-do-i-assign-values-based-on-multiple-conditions-for-existing-columns
 responses['responseType'] = responses.apply(lambda x: getResponseType(x['isPlausible'], x['response']), axis=1)
 
 # SDT by verb bias
+# Same procedure as in our psychophysics lab, but on a different dataset
 accuracy = pd.DataFrame({"matchesBias" : [True, False],
 "hits" : [0,0], "misses" : [0,0], "CRs" : [0,0], "FAs" :
 [0,0]})
     
+#adopted from psychophysics lab materials
 for index, row in responses.iterrows():
     if row["isConcordant"] == True:
         rowInd = 0
@@ -144,6 +172,7 @@ for index, row in responses.iterrows():
             accuracy.loc[rowInd,"CRs"] += 1 
             
 #d' function
+#adopted from psychophysics lab materials
 def dPrime(hitRate, FArate):
     stat = norm.ppf(hitRate) - norm.ppf(FArate)
     return stat
@@ -152,10 +181,10 @@ def criterion(hitRate, FArate):
     stat = -.5*(norm.ppf(hitRate) + norm.ppf(FArate))
     return stat
 
-hitRateMatchesBias = accuracy.loc[0,"hits"]/88
-FArateMatchesBias = accuracy.loc[0,"FAs"]/88
-hitRateMismatchesBias = accuracy.loc[1,"hits"]/94
-FArateMismatchesBias = accuracy.loc[1,"FAs"]/94
+hitRateMatchesBias = accuracy.loc[0,"hits"]/77
+FArateMatchesBias = accuracy.loc[0,"FAs"]/77
+hitRateMismatchesBias = accuracy.loc[1,"hits"]/77
+FArateMismatchesBias = accuracy.loc[1,"FAs"]/77
 
 print("dPrime matches bias:", dPrime(hitRateMatchesBias, FArateMatchesBias))
 print("dPrime mismatches bias:", dPrime(hitRateMismatchesBias, FArateMismatchesBias))
@@ -168,6 +197,7 @@ accuracySentenceType = pd.DataFrame({"sentenceType" : ["transitive", "intransiti
 "hits" : [0,0], "misses" : [0,0], "CRs" : [0,0], "FAs" :
 [0,0]})
     
+#adopted from psychophysics lab materials
 for index, row in responses.iterrows():
     if row["sentenceType"] == "transitive":
         rowInd = 0
@@ -181,7 +211,7 @@ for index, row in responses.iterrows():
             accuracySentenceType.loc[rowInd,"CRs"] += 1        
     else:
         rowInd = 1
-        if row["responseType"] == "hit":
+        if row["responseType"] == "hit": 
             accuracySentenceType.loc[rowInd,"hits"] += 1   
         elif row["responseType"] == "falseAlarm":
             accuracySentenceType.loc[rowInd,"FAs"] += 1   
@@ -190,8 +220,8 @@ for index, row in responses.iterrows():
         elif row["responseType"] == "correctRejection":
             accuracySentenceType.loc[rowInd,"CRs"] += 1 
             
-hitRateTransitive = accuracy.loc[0,"hits"]/86
-FArateTransitive = accuracy.loc[0,"FAs"]/86
+hitRateTransitive = accuracy.loc[0,"hits"]/78
+FArateTransitive = accuracy.loc[0,"FAs"]/78
 hitRateIntransitive = accuracy.loc[1,"hits"]/76
 FArateIntransitive = accuracy.loc[1,"FAs"]/76
 
